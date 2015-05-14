@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mr. Postman</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Courgette|Indie+Flower|Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./stylesheets/style.css">
+	<link rel="icon" 
+      type="image/png" 
+      href="./images/mrIcon.png">
+</head>
+<body >
+
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div>
+				<div class="container">
+					<div class="row col-md-offset-3">
+						<ul class="nav navbar-nav">
+							<li><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+							<li><a href="/"><span class="header">Mr. Postman</span></a></li>
+							<li><a href="/profile"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<div>
+		<div class="container">
+			<div class="row col-md-offset-3">
+				<div class="col-xs-12">
+					<div id="postcontainer">
+					 	<% 
+					 	for (var i = 0; i <= posts.length -1; i++) {%>
+					 		<article class="post">
+					 			<div class="post_details">
+					 				<div class="profile_picture">
+					 					<img id="profiler" src='<%= posts[i].profile%>' width = "50px" height = "50px"
+					 					alt="Profile Pic">
+					 					<img id = "icon" src='<%= posts[i].icon%>' alt="" >
+					 					<div class="timestamp">
+					 						<time><%= posts[i].time %></time>
+					 					</div>
+					 				</div>
+					 				<div class="profile_name">
+					 					<p><%= posts[i].poster %></p>
+					 				</div>
+					 				
+					 				<div class="clearfix"></div>
+					 				<div class="post_content">
+					 					<% if (posts[i].message != null){%>
+					 					<p class="post_message"><%= posts[i].message %></p>
+					 					<%}%>
+				 						<% if (posts[i].picture != null){%>
+				 					 	<img src='<%= posts[i].picture %>'>
+				 					 	<%}%>
+				 					 	<% if (posts[i].description != null){%>
+				 					 	<p class="post_description">
+				 							<%= posts[i].description %>
+				 						</p>
+				 						<%}%>
+					 				</div>
+
+
+					 			</div>
+					 		</article>
+					 	<%};%>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

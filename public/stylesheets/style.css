@@ -1,0 +1,212 @@
+/* { background: rgba(0, 0, 0, 0.05); }*/
+
+body {
+  background-image: url("paper.gif");
+  padding: 50px;
+  font: 14px "Oswald", sans-serif;
+  word-wrap:break-word;
+  padding-top: 110px;
+}
+
+a {
+  color: #00B7FF;
+}
+#banner{
+  width:100%;
+  margin: none;
+  background-color:#2A3E59; 
+  opacity:0.7; 
+}
+.main{
+  width: 100%;
+  padding-top: 20px;
+  //background-color: #BF4E4E;
+  text-align: center;
+  font-size: auto;
+  color: white;
+  font-family:'Courgette', cursive;
+}
+
+
+
+
+#main{
+  color:white;
+  margin-top: 2em;
+  border: 1px solid #BF4E4E ;
+  background-color:#2A3E59; 
+}
+.navbar{
+	background-color: #2A3E59;
+	border-bottom: 0.3em solid #BF4E4E;
+	padding:.5em 0em;
+}
+
+.header{
+	font-family: 'Courgette', cursive;
+	font-size: 1.3em;
+}
+
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+.navbar-default .navbar-nav>li>a {
+	color: #F2F2F2;
+}
+
+.row{
+max-width: 600px;
+margin: auto;
+}
+
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* KEEPS NAV FROM COLLAPSING */
+.navbar-collapse.collapse {
+display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+float: none !important;
+padding:0px 15px;
+}
+
+@media (min-width: 436){
+	.navbar-nav>li, .navbar-nav {
+		padding:0px 15px;
+	}
+}
+
+.navbar-nav.navbar-right:last-child {
+margin-right: -15px !important;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+/* KEEPS NAV FROM COLLAPSING END */
+
+#mainLogo{
+  width:15%;
+  margin-top:0px;
+  margin-left: 42%;
+  opacity: 1;
+}
+
+.timestamp {
+  font-size: 1em;
+  font-family: 'Covered by your Grace', cursive;
+  float: right;
+}
+.post {
+  font-size: 1.5em;
+  border: 0.05em solid #323443;
+  margin-bottom: 5px;
+  background-color:#F2EDF1;
+  box-shadow: .5em .5em .25em #888888;
+}
+.post_details {
+  font-family: 'Covered by your Grace', cursive;
+  width: 100%;  
+  padding: 1%;
+  
+}
+
+.post_content{
+  font-family: 'Oswald' sans-serif;
+  text-align: center;   
+  font-weight: lighter;
+      
+}
+
+#icon {
+  width: 64px;
+  height: 64px;
+  float: right;
+}
+
+@media (max-width: 550px){
+  body{
+    padding-top: 5em;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin:0px ;
+  }
+
+  .nav{
+    font-size: 1em;
+  
+  }
+
+  .navbar li {
+    padding: 0px;
+  }
+
+  .navbar ul{
+    padding: 0px;
+  }
+  
+  .container{
+    width: 100%;
+    padding : 0px;
+  }
+  .post{
+    font-size: .8em;
+    width: 100%;
+  }
+  .post-details{
+   font-size: 1em;    
+  }
+  .post_details>img {
+    width: 24px;
+    height: 24px;
+  }
+  #icon{
+    width:36px;
+    height: 36px;
+  }
+  
+  .post_description{
+    font-size: .7em;
+  }
+  .post_content>img{
+    width: 95%;
+    height:auto;
+  } 
+} 
+
+
+/* COLORS FOR MEDIAS */
+.text-facebook {
+	color: #3b5998;
+}
+
+.text-twitter {
+	color: #55ACEE;
+}
+
+.text-youtube {
+	color: #dd4b39;
+}
+
+.text-instagram {
+	color: #3f729b;
+}
+/* COLORS FOR MEDIAS END*/

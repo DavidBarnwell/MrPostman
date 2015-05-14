@@ -1,0 +1,25 @@
+{
+  "name": "node-authentication",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "bcrypt-nodejs": "latest",
+    "connect-flash": "~0.1.1",
+    "ejs": "~0.8.5",
+    "express": "~3.4.4",
+    "fb": "^0.7.0",
+    "instagram-node-lib": "^0.1.1",
+    "mongoose": "~3.8.1",
+    "node-monkey": "^0.2.14",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-instagram": "^0.1.2",
+    "passport-local": "~0.1.6",
+    "passport-twitter": "~1.0.2",
+    "passport-youtube": "0.0.6",
+    "path": "^0.11.14",
+    "twitter": "^1.2.1",
+    "youtube-api": "^0.3.2"
+  }
+}
